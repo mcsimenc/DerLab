@@ -1,0 +1,57 @@
+# FIRST STEP! Download a tree from the directory on the cluster in the derstudent account
+#
+# 1.  Open Terminal and type: ssh derstudent@kepler.fullerton.edu
+#     and then enter the Der Lab password
+# 2.  Type: cd users
+#     and hit Enter
+# 3.  Type: ls
+#     and find your name. Then replace yourname with your name and type:
+# 4.  cd yourname
+#     and hit Enter
+# 5.  Type: cd R_workshop
+#     and hit Enter
+# 6.  Type: pwd
+#     and hit Enter. Select and copy the output. You could paste it somewhere so you don't lose it if you want.
+# 7.  Log out by pressing, at the same time, control D
+# 8.  DIRECTIONS TO NAVIGATE TO THEIR WORKING DIRECTORY
+# 9.  Type: scp -r derstudent@kepler.fullerton.edu:/your/path/here .
+#     and replace /your/path/here with what you copied from step 4
+# 10. Type: cd R_workshop
+# 11. Type: pwd
+#     and copy the output
+# 12. Open Rstudio
+# 13. In Rstudio, press, at the same time, command O (not zero) and then find your the directory with the files you just transferred from the cluster.
+# 14. Open the file LTT_workshop.R and follow the instructions
+
+
+
+Goals for today 2/10
+
+If I play music work on a song for James. Make it more instrumental
+
+Finish pipeline completely, including Circos function. Look into Ti/Tv
+
+
+
+How long do you expect an open reading frame to be by chance? 
+
+60 possible 3 stop
+
+each codon = (57/60)*n = P(seq)
+
+60 possible. on in those three are expected to be stop. so 1 in 20. so every 20 there should be a stop.
+
+long terminal repeat retrotransposons gene conversion phylogenetics domain discovery exploration
+
+Gene conversion
+Ltr retrotransposons
+
+Phylogenetic
+
+Visualization
+
+Insertion
+
+Transposition History
+
+PhILTH
