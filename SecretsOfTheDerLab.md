@@ -61,3 +61,9 @@ cd $A
 cp $A/matt/test/newfile.txt .
 ln -s $MG1
 ```
+
+#### 5. Make make environment settings for different projects as text files.
+
+then you just have to load them if you're going to be working on that project,
+
+`source APPLE`
