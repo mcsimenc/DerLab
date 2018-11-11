@@ -27,11 +27,11 @@ print('''
 
 When I was working on the script from #2, I did this to make trying it out easier
 
-`export Psalmon=/home/mcsimenc/home2data/apple-pear/reference/MalusDomesticaAnnotation.PhytozomeV12/quantitation/salmon_output`
-
-`export STsalmon=/home/mcsimenc/home2data/apple-pear/hiseq.huck.psu.edu/StringTieAssemblies/masked/salmon_quant/salmon_output`
-
-`export STmap=/home/mcsimenc/home2data/apple-pear/hiseq.huck.psu.edu/StringTieAssemblies/masked/stringtie2phytozome.map`
+```
+export Psalmon=/home/mcsimenc/home2data/apple-pear/reference/MalusDomesticaAnnotation.PhytozomeV12/quantitation/salmon_output
+export STsalmon=/home/mcsimenc/home2data/apple-pear/hiseq.huck.psu.edu/StringTieAssemblies/masked/salmon_quant/salmon_output
+export STmap=/home/mcsimenc/home2data/apple-pear/hiseq.huck.psu.edu/StringTieAssemblies/masked/stringtie2phytozome.map
+```
 
 Then when I wanted to call the script I would do
 
@@ -45,12 +45,16 @@ Saves a lot of time.
 
 4. Make environment variables of directories you currently work in and files you often use. For example, the paths to the reference genomes we're working on, which we need for many programs. MG1 for Malus domestica genome version 1
 
-`export A=/home/mcsimenc/home2data/apple-pear/hiseq.huck.psu.edu`
-`export MG1=/home/mcsimenc/home2data/apple-pear/reference/reference_genome1/Mdomestica_196_v1.0.fa`
-`export MG2=/home/mcsimenc/home2data/apple-pear/reference/reference_genome2/GDDH13_1-1_formatted.fasta`
+```
+export A=/home/mcsimenc/home2data/apple-pear/hiseq.huck.psu.edu
+export MG1=/home/mcsimenc/home2data/apple-pear/reference/reference_genome1/Mdomestica_196_v1.0.fa
+export MG2=/home/mcsimenc/home2data/apple-pear/reference/reference_genome2/GDDH13_1-1_formatted.fasta
+```
 
 then you have shortcuts like this
 
-`cd $A`
-`cp $A/matt/test/newfile.txt .`
-`ln -s $MG1`
+```
+cd $A
+cp $A/matt/test/newfile.txt .
+ln -s $MG1
+```
