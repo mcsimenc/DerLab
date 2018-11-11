@@ -15,13 +15,16 @@ When developing a script it can be very help to slim down the time you spend typ
 
 #### 2. Always make a help for scripts that display when it is called with 0 arguments
 
-In Python this is how I do it. Super simple and saves you the frustration of having forgotten what a script you wrote is for,
+This is how I do it in Python. Super simple, and can saves you a LOT of frustration when you inevitably forget what you wrote a script for. Another line could be added for optional flags if you have any.
 ```
 args = sys.argv
 if len(args) < 2 or '-h' in args:
 print('''
  usage:
 	quant-snp-matrix.py <Psalmon> <STsalmon> <STmap> <Tsalmon> <Tmap>
+	
+ description:
+ 	merges expression and vcf data into single table
 ''', file=sys.stderr)
     sys.exit()
 ```
