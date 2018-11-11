@@ -39,7 +39,7 @@ export STsalmon=/home/mcsimenc/home2data/apple-pear/hiseq.huck.psu.edu/StringTie
 export STmap=/home/mcsimenc/home2data/apple-pear/hiseq.huck.psu.edu/StringTieAssemblies/masked/stringtie2phytozome.map
 ```
 
-Then when you want to call the script you can simply do this,
+Then when you want to test the script you can simply do this,
 
 `$S $Psalmon $STsalmon $STmap`
 
