@@ -1,7 +1,7 @@
 # Secrets of the Der Lab
 ## Volume 1: Guide to Kepler: shortcuts and hidden passageways
 ### 1. Aliases and environment variables for scripting
-When developing a script it can really help slim down the time you spend typing in the same thing over and over and over and over again, which gets to be frustratingly boring! But by using shortcuts you'll really slim down that boring stuff and it will make you feel like a computer whiz. It will seem like magic to onlookers, who will say "Wait! what the heck did you just do?". So give it a try! You might like it.
+When developing a script it can be very help to slim down the time you spend typing in the same thing over and over and over and over and over and over and over and over again, which gets to be frustratingly boring! But by using shortcuts you'll really slim down that boring stuff and it will make you feel like a computer whiz. It will seem like magic to onlookers, who will say "Wait! what the heck did you just do?". So give it a try! You might like it.
 
 #### 1. Aliases and environment variables
 
