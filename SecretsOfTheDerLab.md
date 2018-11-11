@@ -11,7 +11,7 @@ When developing a script it can be very help to slim down the time you spend typ
 
 ##### 1b. making aliases that open scripts I'm currently working on
 
-`~alias s='vim $S'`
+`alias s='vim $S'`
 
 #### 2. Always make a help for scripts that display when it is called with 0 arguments
 
