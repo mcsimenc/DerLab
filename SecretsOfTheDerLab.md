@@ -28,7 +28,9 @@ print('''
 When I was working on the script from #2, I did this to make trying it out easier
 
 `export Psalmon=/home/mcsimenc/home2data/apple-pear/reference/MalusDomesticaAnnotation.PhytozomeV12/quantitation/salmon_output`
+
 `export STsalmon=/home/mcsimenc/home2data/apple-pear/hiseq.huck.psu.edu/StringTieAssemblies/masked/salmon_quant/salmon_output`
+
 `export STmap=/home/mcsimenc/home2data/apple-pear/hiseq.huck.psu.edu/StringTieAssemblies/masked/stringtie2phytozome.map`
 
 Then when I wanted to call the script I would do
