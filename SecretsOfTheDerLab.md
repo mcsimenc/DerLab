@@ -15,7 +15,7 @@ When developing a script it can be very help to slim down the time you spend typ
 
 #### 2. Always make a help for scripts that display when it is called with 0 arguments
 
-This is how I do it in Python. Super simple, and can saves you a LOT of frustration when you inevitably forget what you wrote a script for. Another line could be added for optional flags if you have any.
+This is how I do it in Python. Super simple, and can save you from frustration if you forget what you wrote a script for. Another line could be added for optional flags if you have any.
 ```
 args = sys.argv
 if len(args) < 2 or '-h' in args:
