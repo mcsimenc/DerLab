@@ -171,3 +171,30 @@ probuild= #location of probuild executable (required for genemark)
 ```
 
 #### Submission Script
+
+```
+#!/bin/bash
+#PBS -k oe
+#PBS -N SantMAKERMPI
+#PBS -q q40
+#PBS -j oe
+#PBS -m ea
+#PBS -M mcsimenc@csu.fullerton.edu
+#PBS -l nodes=1:ppn=40
+
+module load local/maker
+module load local/trnascan
+module load openmpi
+
+cd /home/derstudent/data/santalales/annotation_all_taxa
+
+
+echo "START"
+date
+
+mpirun -n 40 maker maker_bopts.ctl maker_exe.ctl maker_opts.ctl 1>maker.err 2>maker.log
+#mpirun -n 200 maker maker_bopts.ctl maker_exe.ctl maker_opts.ctl 1>maker.err 2>maker.log
+
+echo "END"
+date
+```
