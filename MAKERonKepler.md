@@ -193,7 +193,6 @@ echo "START"
 date
 
 mpirun -n 40 maker maker_bopts.ctl maker_exe.ctl maker_opts.ctl 1>maker.err 2>maker.log
-#mpirun -n 200 maker maker_bopts.ctl maker_exe.ctl maker_opts.ctl 1>maker.err 2>maker.log
 
 echo "END"
 date
