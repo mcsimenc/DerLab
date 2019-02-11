@@ -28,7 +28,7 @@ maker_exe.ctl
 
 These files contain general settings, BLAST settings, and executable paths for programs executed by MAKER. The syntax for the control files is key=value with # preceeded comments. The control files contain descriptive comments.
 
-###### maker_opts.ctl
+##### maker_opts.ctl
 
 ```
 #-----Genome (these are always required)
