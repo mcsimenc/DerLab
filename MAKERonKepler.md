@@ -4,7 +4,7 @@
 MAKER was designed for annotating whole-genome assemblies but it may also be useful for annotating shorter sequences. MAKER streamlines the annotation process, handling the execution of numerous annotation processes, like running sequence aligners, gene predictors, and creating standard files for genomic features such GFF3.
 
 ### Setting up your MAKER space
-It's best to create a new directory in which to run MAKER from. When ready to start the run, this directory will contain three control files, your PBS/torque/qsub/shell script to submit to the resource manager TORQUE using `qsub`, explained below. While running, MAKER will generate a very large number of files. Warning: moving these directories around in your filesystem takes a very long time.
+It's best to create a new directory in which to run MAKER from. When ready to start the run, this directory will contain three control files, your PBS/torque/qsub/shell script to submit to the resource manager TORQUE using `qsub`, explained below. While running, MAKER will generate a very large number of files. Warning: moving a MAKER output directory around in your filesystem takes a very long time.
 
 ##### Control Files
 ##### Submission Script
