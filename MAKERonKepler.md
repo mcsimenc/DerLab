@@ -107,5 +107,67 @@ clean_up=0 #removes theVoid directory with individual analysis files, 1 = yes, 0
 TMP= #specify a directory other than the system default temporary directory for temporary files
 ```
 
+##### maker_bops.ctl
+
+The default parameters are usually ok.
+
+```
+#-----BLAST and Exonerate Statistics Thresholds
+blast_type=ncbi+ #set to 'ncbi+', 'ncbi' or 'wublast'
+
+pcov_blastn=0.8 #Blastn Percent Coverage Threhold EST-Genome Alignments
+pid_blastn=0.85 #Blastn Percent Identity Threshold EST-Genome Aligments
+eval_blastn=1e-10 #Blastn eval cutoff
+bit_blastn=40 #Blastn bit cutoff
+depth_blastn=0 #Blastn depth cutoff (0 to disable cutoff)
+
+pcov_blastx=0.5 #Blastx Percent Coverage Threhold Protein-Genome Alignments
+pid_blastx=0.4 #Blastx Percent Identity Threshold Protein-Genome Aligments
+eval_blastx=1e-06 #Blastx eval cutoff
+bit_blastx=30 #Blastx bit cutoff
+depth_blastx=0 #Blastx depth cutoff (0 to disable cutoff)
+
+pcov_tblastx=0.8 #tBlastx Percent Coverage Threhold alt-EST-Genome Alignments
+pid_tblastx=0.85 #tBlastx Percent Identity Threshold alt-EST-Genome Aligments
+eval_tblastx=1e-10 #tBlastx eval cutoff
+bit_tblastx=40 #tBlastx bit cutoff
+depth_tblastx=0 #tBlastx depth cutoff (0 to disable cutoff)
+
+pcov_rm_blastx=0.5 #Blastx Percent Coverage Threhold For Transposable Element Masking
+pid_rm_blastx=0.4 #Blastx Percent Identity Threshold For Transposbale Element Masking
+eval_rm_blastx=1e-06 #Blastx eval cutoff for transposable element masking
+bit_rm_blastx=30 #Blastx bit cutoff for transposable element masking
+
+ep_score_limit=20 #Exonerate protein percent of maximal score threshold
+en_score_limit=20 #Exonerate nucleotide percent of maximal score threshold
+```
+
+##### maker_exe.ctl
+
+```
+#-----Location of Executables Used by MAKER/EVALUATOR
+makeblastdb= #location of NCBI+ makeblastdb executable
+blastn= #location of NCBI+ blastn executable
+blastx= #location of NCBI+ blastx executable
+tblastx= #location of NCBI+ tblastx executable
+formatdb= #location of NCBI formatdb executable
+blastall= #location of NCBI blastall executable
+xdformat= #location of WUBLAST xdformat executable
+blasta= #location of WUBLAST blasta executable
+RepeatMasker=/home/joshd/software/maker/bin/../exe/RepeatMasker/RepeatMasker #location of RepeatMasker executable
+exonerate=/home/joshd/software/maker/bin/../exe/exonerate/bin/exonerate #location of exonerate executable
+
+#-----Ab-initio Gene Prediction Algorithms
+snap=/home/joshd/software/maker/bin/../exe/snap/snap #location of snap executable
+gmhmme3= #location of eukaryotic genemark executable
+gmhmmp= #location of prokaryotic genemark executable
+augustus= #location of augustus executable
+fgenesh= #location of fgenesh executable
+tRNAscan-SE= #location of trnascan executable
+snoscan= #location of snoscan executable
+
+#-----Other Algorithms
+probuild= #location of probuild executable (required for genemark)
+```
 
 #### Submission Script
