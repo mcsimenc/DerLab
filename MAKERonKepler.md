@@ -17,7 +17,7 @@ It's best to create a new directory in which to run MAKER from. When ready to st
 
 In this document, $RUNDIR is the location of the hypothetical directory from which MAKER will be executed.
 
-##### Control Files
+#### Control Files
 To generate template control files, from within $RUNDIR and after loading the MAKER module, type `maker -CTL`. This will generate three files:
 
 ```
@@ -27,6 +27,8 @@ maker_exe.ctl
 ```
 
 These files contain general settings, BLAST settings, and executable paths for programs executed by MAKER. The syntax for the control files is key=value with # preceeded comments. The control files contain descriptive comments.
+
+###### maker_opts.ctl
 
 ```
 #-----Genome (these are always required)
@@ -106,4 +108,4 @@ TMP= #specify a directory other than the system default temporary directory for 
 ```
 
 
-##### Submission Script
+#### Submission Script
