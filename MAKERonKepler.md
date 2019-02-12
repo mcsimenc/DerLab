@@ -4,7 +4,7 @@
 MAKER was designed for annotating whole-genome assemblies but it may also be useful for annotating shorter sequences. MAKER streamlines the annotation process, handling the execution of numerous annotation processes, like running sequence aligners, gene predictors, and creating standard files for genomic features such GFF3.
 
 ### Loading MAKER
-MAKER is installed both locally (`/home/joshd/software/`) and globally (`/share/apps/genomics/`). The global installation is probably less reliable than the local one. If you don't already have one, you may need to create or copy a local module file for maker. Information about how to set up your module environment is in KeplerModules.md.
+MAKER is installed both locally (`/home/joshd/software/`) and globally (`/share/apps/genomics/`). The global installation is probably less reliable than the local one. If you don't already have one, you may need to create or copy a local module file for maker. Information about how to set up your module environment is in [KeplerModules.md](https://github.com/<username>/<repo name>/blob/master/KeplerModules.md)
 
 To load MAKER, type
 
