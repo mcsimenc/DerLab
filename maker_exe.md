@@ -24,3 +24,4 @@ snoscan= #location of snoscan executable
 #-----Other Algorithms
 probuild= #location of probuild executable (required for genemark)
 ```
+[DerDocs Home](https://github.com/mcsimenc/DerLab/blob/master/DerDocsHome.md)
