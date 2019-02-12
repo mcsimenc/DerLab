@@ -21,11 +21,10 @@ In this document, $RUNDIR is the location of the hypothetical directory from whi
 #### Control Files
 To generate template control files, from within $RUNDIR and after loading the MAKER module, type `maker -CTL`. This will generate three files:
 
-```
-maker_opts.ctl      General Settings
-maker_bopts.ctl     BLAST Settings
-maker_exe.ctl       Executable Paths (dependencies)
-```
+
+[maker_opts.ctl](https://github.com/mcsimenc/DerLab/blob/master/maker_opts.md) contains general settings,
+[maker_bopts.ctl](https://github.com/mcsimenc/DerLab/blob/master/maker_bopts.md) contains BLAST settings,
+[maker_exe.ctl](https://github.com/mcsimenc/DerLab/blob/master/maker_exe.md) contains paths to dependency executables.
 
 The syntax for the control files is key=value with # preceeded comments. The control files contain descriptive comments. Here is my explanation of the most important options to know about. Default BLAST settings were chosen because MAKER performed well under them for eukaryotic genomes.
 
@@ -176,3 +175,5 @@ mpirun -n 40 maker maker_bopts.ctl maker_exe.ctl maker_opts.ctl 1>maker.err 2>ma
 echo "END"
 date
 ```
+
+[DerDocs Home](https://github.com/mcsimenc/DerLab/blob/master/DerDocsHome.md)
