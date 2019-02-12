@@ -175,7 +175,7 @@ probuild= #location of probuild executable (required for genemark)
 ```
 #!/bin/bash
 #PBS -k oe
-#PBS -N SantMAKERMPI
+#PBS -N JobName
 #PBS -q q40
 #PBS -j oe
 #PBS -m ea
