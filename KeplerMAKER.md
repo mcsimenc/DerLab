@@ -24,7 +24,7 @@ To generate template control files, from within $RUNDIR and after loading the MA
 
 [maker_opts.ctl](https://github.com/mcsimenc/DerLab/blob/master/maker_opts.md) contains general settings, \
 [maker_bopts.ctl](https://github.com/mcsimenc/DerLab/blob/master/maker_bopts.md) contains BLAST settings, \
-[maker_exe.ctl](https://github.com/mcsimenc/DerLab/blob/master/maker_exe.md) contains paths to dependency executables. \
+[maker_exe.ctl](https://github.com/mcsimenc/DerLab/blob/master/maker_exe.md) contains paths to dependency executables.
 
 The syntax for the control files is key=value with # preceeded comments. The control files contain descriptive comments. Here is my explanation of the most important options to know about. Default BLAST settings were chosen because MAKER performed well under them for eukaryotic genomes.
 
@@ -32,36 +32,59 @@ DNA and protein sequences can be provided to MAKER in FASTA or GFF3 format. Belo
 
 ##### Notable options in maker_opts.ctl
 
-```
 genome= #genome sequence (fasta file or fasta embeded in GFF3 file)
+
 organism_type=eukaryotic #eukaryotic or prokaryotic. Default is eukaryotic
+
 est= #set of ESTs or assembled mRNA-seq in fasta format
+
 protein=  #protein sequence file in fasta format (i.e. from mutiple oransisms)
+
 rmlib= #provide an organism specific repeat library in fasta format for RepeatMasker
+
 repeat_protein=/home/joshd/software/maker/data/te_proteins.fasta #provide a fasta file of transposable element proteins for RepeatRunner
+
 snaphmm= #SNAP HMM file
+
 gmhmm= #GeneMark HMM file
+
 augustus_species= #Augustus gene prediction species model
+
 fgenesh_par_file= #FGENESH parameter file
+
 est2genome=0 #infer gene predictions directly from ESTs, 1 = yes, 0 = no
+
 protein2genome=0 #infer predictions from protein homology, 1 = yes, 0 = no
+
 trna=0 #find tRNAs with tRNAscan, 1 = yes, 0 = no
+
 snoscan_rrna= #rRNA file to have Snoscan find snoRNAs
-# This could be used to annotate protein-coding transposable elements.
+
+This could be used to annotate protein-coding transposable elements.
 unmask=0 #also run ab-initio prediction programs on unmasked sequence, 1 = yes, 0 = no
+
 cpus=1 #max number of cpus to use in BLAST and RepeatMasker (not for MPI, leave 1 when using MPI)
+
 pred_stats=0 #report AED and QI statistics for all predictions as well as models
+
 min_protein=0 #require at least this many amino acids in predicted proteins
+
 alt_splice=0 #Take extra steps to try and find alternative splicing, 1 = yes, 0 = no
+
 always_complete=0 #extra steps to force start and stop codons, 1 = yes, 0 = no
+
 split_hit=10000 #length for the splitting of hits (expected max intron size for evidence alignments)
+
 single_exon=0 #consider single exon EST evidence when generating annotations, 1 = yes, 0 = no
+
 single_length=250 #min length required for single exon ESTs if 'single_exon is enabled'
-# For re-annotating a genome, set to 1
+
+For re-annotating a genome, set to 1
 map_forward=0 #map names and attributes forward from old GFF3 genes, 1 = yes, 0 = no
-# To save disk space
+
+To save disk space
 clean_up=0 #removes theVoid directory with individual analysis files, 1 = yes, 0 = no
-```
+
 
 ##### Paths in maker_exe.ctl
 
