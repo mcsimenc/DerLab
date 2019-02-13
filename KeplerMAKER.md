@@ -19,7 +19,7 @@ It's best to create a new directory in which to run MAKER from. When ready to st
 
 In this document, $RUNDIR is the location of the hypothetical directory from which MAKER will be executed.
 
-#### Control Files
+### Control Files
 To generate template control files, from within $RUNDIR and after loading the MAKER module, type `maker -CTL`. This will generate three files:
 
 
@@ -31,42 +31,42 @@ The syntax for the control files is key=value with # preceeded comments. The con
 
 DNA and protein sequences can be provided to MAKER in FASTA or GFF3 format. Below, the FASTA options are shown.
 
-##### Notable options in maker_opts.ctl
+#### Notable options in maker_opts.ctl
 
 ###### syntax: `key=value`
 ###### e.g., `genome=mygenome.fasta`
 
-##### Genome sequence in FASTA format
+#### Genome sequence in FASTA format
 `genome`
 
-##### eukaryotic (default) or prokaryotic genome.
+#### eukaryotic (default) or prokaryotic genome.
 `organism_type=eukaryotic`
 
-##### Expressed sequences (e.g. EST, mRNA-seq transcripts) MAKER will use mappings of these sequences as as evidence for the existence of genes, and will directly infer models from genes using Exonerate est2genome if est2genome=1
+#### Expressed sequences (e.g. EST, mRNA-seq transcripts) MAKER will use mappings of these sequences as as evidence for the existence of genes, and will directly infer models from genes using Exonerate est2genome if est2genome=1
 `est`
 
-##### Expressed sequences (e.g. EST, mRNA-seq transcripts) from a different organism than the one you are annotating. MAKER will use alignments of these sequences as as evidence for the existence of genes, and will directly infer models from genes using Exonerate est2genome if est2genome=1. This option will likley not add much to the annotation if assemble mRNA-seq data are given with `est`.
+#### Expressed sequences (e.g. EST, mRNA-seq transcripts) from a different organism than the one you are annotating. MAKER will use alignments of these sequences as as evidence for the existence of genes, and will directly infer models from genes using Exonerate est2genome if est2genome=1. This option will likley not add much to the annotation if assemble mRNA-seq data are given with `est`.
 `altest`
 
-##### Protein sequences. MAKER will use homology to these proteins as evidence for the existence of genes, and will directly infer models from genes using Exonerate protein2genome if protein2genome=1. The MAKER documentation suggests using "NP" sequences from ref-seq but not unreviewed sequences. 
+#### Protein sequences. MAKER will use homology to these proteins as evidence for the existence of genes, and will directly infer models from genes using Exonerate protein2genome if protein2genome=1. The MAKER documentation suggests using "NP" sequences from ref-seq but not unreviewed sequences. 
 `protein`
 
-##### Repeat library. Repbase is a good start, but de novo libraries can be created with RepeatModeler.
+#### Repeat library. Repbase is a good start, but de novo libraries can be created with RepeatModeler.
 rmlib= #provide an organism specific repeat library in fasta format for RepeatMasker
 
-##### Transposable element proteins to assist with masking. A file containing some called `te_proteins.fasta` is included with MAKER at `makerinstalldir/data/`
+#### Transposable element proteins to assist with masking. A file containing some called `te_proteins.fasta` is included with MAKER at `makerinstalldir/data/`
 `repeat_protein`
 
-##### SNAP HMM file. A trained HMM for the gene predictor SNAP.
+#### SNAP HMM file. A trained HMM for the gene predictor SNAP.
 `snaphmm`
 
-##### GeneMark HMM file. A trained HMM for the gene predictor GeneMark.
+#### GeneMark HMM file. A trained HMM for the gene predictor GeneMark.
 `gmhmm`
 
-##### Augustus HMM file. A trained HMM for the gene predictor Augustus.
+#### Augustus HMM file. A trained HMM for the gene predictor Augustus.
 augustus_species= #Augustus gene prediction species model
 
-##### FGENESH HMM file. A trained HMM for the gene predictor FGENESH.
+#### FGENESH HMM file. A trained HMM for the gene predictor FGENESH.
 `fgenesh_par_file`
 
 #
