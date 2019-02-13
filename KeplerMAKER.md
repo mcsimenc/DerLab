@@ -44,7 +44,7 @@ In FASTA format.
 #### Eu/Pro-karyotic
 Defult is eukaryotics, other option is prokaryotic, all lowercase.
 
-`organism_type=eukaryotic`
+`organism_type`
 
 #### Transcript(ome)s
 Expressed sequences (e.g. EST, mRNA-seq transcripts) MAKER will use mappings of these sequences as as evidence for the existence of genes, and will directly infer models from genes using Exonerate est2genome if est2genome=1
