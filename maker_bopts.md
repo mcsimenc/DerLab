@@ -1,4 +1,5 @@
 [DerDocs Home](https://github.com/mcsimenc/DerLab/blob/master/DerDocsHome.md)
+
 ```
 #-----BLAST and Exonerate Statistics Thresholds
 blast_type=ncbi+ #set to 'ncbi+', 'ncbi' or 'wublast'
@@ -29,4 +30,5 @@ bit_rm_blastx=30 #Blastx bit cutoff for transposable element masking
 ep_score_limit=20 #Exonerate protein percent of maximal score threshold
 en_score_limit=20 #Exonerate nucleotide percent of maximal score threshold
 ```
+
 [DerDocs Home](https://github.com/mcsimenc/DerLab/blob/master/DerDocsHome.md)
