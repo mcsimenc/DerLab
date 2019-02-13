@@ -93,19 +93,35 @@ These turn on direct inference of gene models from transcript (`est` & `altest`)
 
 `snoscan_rrna`
 
+#### Run ab initio on unmasked sequence
 
+This could be helpful in annotating novel transposons. \
 `unmask`
 
+#### Number of processors available
+
+Leave this value at 1 if you are using MPI; that is, running MAKER on multiple nodes simultaneously. \
 `cpus`
+
+#### Extra stats in GFF3
+
+By default, only transcripts contain AED and other statistics (QI), while features such as exons do not. Turn it on to get this information for all features. \
 `pred_stats`
+
+#### Quality threshold
+
+Setting maximum tolerated AED to less than one will result in fewer models of higher average quality. \
+`AED_threshold`
+
+#### Min protein length from gene predictors
+
+Gene predictors can predict many small proteins. Setting this can reduce spurious predictions by ab initios. \
 `min_protein`
+
+#### Find alternate splice forms
+
+Gene predictors will be trained to find alternative splice forms if this is on, which will be output in the GFF3. \
 `alt_splice`
-`always_complete`
-`split_hit`
-`single_exon`
-`single_length`
-`map_forward`
-`clean_up`
 
 
 ##### Paths in maker_exe.ctl
