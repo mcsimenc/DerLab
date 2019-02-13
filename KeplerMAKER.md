@@ -36,40 +36,42 @@ DNA and protein sequences can be provided to MAKER in FASTA or GFF3 format. Belo
 ###### syntax: `key=value`
 ###### e.g., `genome=mygenome.fasta`
 
-#### Genome sequence in FASTA format
+#### DNA sequence (genome assembly)
+In FASTA format.
 `genome`
 
-#### eukaryotic (default) or prokaryotic genome.
+#### Eu/Pro-karyotic
+Defult is eukaryotics, other option is prokaryotic, all lowercase.
 `organism_type=eukaryotic`
 
-#### Expressed sequences (e.g. EST, mRNA-seq transcripts) MAKER will use mappings of these sequences as as evidence for the existence of genes, and will directly infer models from genes using Exonerate est2genome if est2genome=1
+#### Transcript(ome)s
+Expressed sequences (e.g. EST, mRNA-seq transcripts) MAKER will use mappings of these sequences as as evidence for the existence of genes, and will directly infer models from genes using Exonerate est2genome if est2genome=1
 `est`
 
-#### Expressed sequences (e.g. EST, mRNA-seq transcripts) from a different organism than the one you are annotating. MAKER will use alignments of these sequences as as evidence for the existence of genes, and will directly infer models from genes using Exonerate est2genome if est2genome=1. This option will likley not add much to the annotation if assemble mRNA-seq data are given with `est`.
+#### Alt-species transcript(ome)s
+Expressed sequences (e.g. EST, mRNA-seq transcripts) from a different organism than the one you are annotating. MAKER will use alignments of these sequences as as evidence for the existence of genes, and will directly infer models from genes using Exonerate est2genome if est2genome=1. This option will likley not add much to the annotation if assemble mRNA-seq data are given with `est`.
 `altest`
 
-#### Protein sequences. MAKER will use homology to these proteins as evidence for the existence of genes, and will directly infer models from genes using Exonerate protein2genome if protein2genome=1. The MAKER documentation suggests using "NP" sequences from ref-seq but not unreviewed sequences. 
+#### Protein sequences
+Protein sequences. MAKER will use homology to these proteins as evidence for the existence of genes, and will directly infer models from genes using Exonerate protein2genome if protein2genome=1. The MAKER documentation suggests using "NP" sequences from ref-seq but not unreviewed sequences. 
 `protein`
 
-#### Repeat library. Repbase is a good start, but de novo libraries can be created with RepeatModeler.
+#### Repeat library (TEs, other repeats)
+Repbase is a good start, but de novo libraries can be created with RepeatModeler.
 rmlib= #provide an organism specific repeat library in fasta format for RepeatMasker
 
-#### Transposable element proteins to assist with masking. A file containing some called `te_proteins.fasta` is included with MAKER at `makerinstalldir/data/`
+#### TE proteins
+Transposable element proteins to assist with masking. A file containing some called `te_proteins.fasta` is included with MAKER at `makerinstalldir/data/`
 `repeat_protein`
 
-#### SNAP HMM file. A trained HMM for the gene predictor SNAP.
+#### Gene predictor trained HMM
+Necessary for using gene predictors, a trained HMM for on of the four integrated ab initio gene prediction programs: SNAP, Augustus, GeneMark, or FGENESH.
 `snaphmm`
-
-#### GeneMark HMM file. A trained HMM for the gene predictor GeneMark.
 `gmhmm`
-
-#### Augustus HMM file. A trained HMM for the gene predictor Augustus.
-augustus_species= #Augustus gene prediction species model
-
-#### FGENESH HMM file. A trained HMM for the gene predictor FGENESH.
+`augustus_species`
 `fgenesh_par_file`
 
-#
+####  
 est2genome=0 #infer gene predictions directly from ESTs, 1 = yes, 0 = no
 
 protein2genome=0 #infer predictions from protein homology, 1 = yes, 0 = no
