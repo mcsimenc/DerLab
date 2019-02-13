@@ -37,80 +37,79 @@ DNA and protein sequences can be provided to MAKER in FASTA or GFF3 format. Belo
 ###### e.g., `genome=mygenome.fasta`
 
 #### DNA sequence (genome assembly)
-`genome`
-Required, in FASTA format. Value is a path to a FASTA file. \
+`genome` \
+Required, in FASTA format. Value is a path to a FASTA file.
 
 #### Eu/Pro-karyotic
-`organism_type`
-Value is either eukaryotic or prokaryotic. \
+`organism_type` \
+Value is either eukaryotic or prokaryotic.
 
 #### Transcript(ome)s
-`est`
-Value is a path to nucleotide FASTA file. Expressed sequences (e.g. EST, mRNA-seq transcripts) MAKER will use mappings of these sequences as as evidence for the existence of genes, and will directly infer models from genes using Exonerate est2genome if est2genome=1. \
+`est` \
+Value is a path to nucleotide FASTA file. Expressed sequences (e.g. EST, mRNA-seq transcripts) MAKER will use mappings of these sequences as as evidence for the existence of genes, and will directly infer models from genes using Exonerate est2genome if est2genome=1.
 
 #### Alt-species transcript(ome)s
-`altest`
-Value is a path to nucleotide FASTA file. Expressed sequences (e.g. EST, mRNA-seq transcripts) from a different organism than the one you are annotating. MAKER will use alignments of these sequences as as evidence for the existence of genes, and will directly infer models from genes using Exonerate est2genome if est2genome=1. This option will likley not add much to the annotation if assemble mRNA-seq data are given with `est`. \
+`altest` \
+Value is a path to nucleotide FASTA file. Expressed sequences (e.g. EST, mRNA-seq transcripts) from a different organism than the one you are annotating. MAKER will use alignments of these sequences as as evidence for the existence of genes, and will directly infer models from genes using Exonerate est2genome if est2genome=1. This option will likley not add much to the annotation if assemble mRNA-seq data are given with `est`.
 
 #### Protein sequences
-`protein`
-Value is a path to protein FASTA file. Protein sequences. MAKER will use homology to these proteins as evidence for the existence of genes, and will directly infer models from genes using Exonerate protein2genome if protein2genome=1. The MAKER documentation suggests using "NP" sequences from ref-seq but not unreviewed sequences. \
+`protein` \
+Value is a path to protein FASTA file. Protein sequences. MAKER will use homology to these proteins as evidence for the existence of genes, and will directly infer models from genes using Exonerate protein2genome if protein2genome=1. The MAKER documentation suggests using "NP" sequences from ref-seq but not unreviewed sequences.
 
 #### Repeat library (TEs, other repeats)
-`rmlib`
-Value is a path to nucleotide FASTA file. Repbase is a good start, but de novo libraries can be created with RepeatModeler. \
+`rmlib` \
+Value is a path to nucleotide FASTA file. Repbase is a good start, but de novo libraries can be created with RepeatModeler.
 
 #### TE proteins
-`repeat_protein`
-Value is a path to protein FASTA file. Transposable element proteins to assist with masking. A file containing some called `te_proteins.fasta` is included with MAKER at `makerinstalldir/data/` \
+`repeat_protein` \
+Value is a path to protein FASTA file. Transposable element proteins to assist with masking. A file containing some called `te_proteins.fasta` is included with MAKER at `makerinstalldir/data/`
 
 #### Gene predictor trained HMM
 `snaphmm` \
 `gmhmm` \
 `augustus_species` \
-`fgenesh_par_file`
-Value is a path to program-specific HMM file. Necessary for using gene predictors, a trained HMM for on of the four integrated ab initio gene prediction programs: SNAP, Augustus, GeneMark, or FGENESH. \
+`fgenesh_par_file` \
+Value is a path to program-specific HMM file. Necessary for using gene predictors, a trained HMM for on of the four integrated ab initio gene prediction programs: SNAP, Augustus, GeneMark, or FGENESH.
 
 #### Infer gene models directly from sequence alignments
 `est2genome` \
-`protein2genome`
-Value is 0 or 1. These turn on direct inference of gene models from transcript (`est` & `altest`) and protein (`protein`) sequences, respectively. \
+`protein2genome` \
+Value is 0 or 1. These turn on direct inference of gene models from transcript (`est` & `altest`) and protein (`protein`) sequences, respectively.
 
 #### Annotate tRNA genes
-`trna`
-Value is 0 or 1. \
+`trna` \
+Value is 0 or 1.
 
 #### Annotate rRNA genes
-`snoscan_rrna`
-Value is 0 or 1. \
+`snoscan_rrna` \
+Value is 0 or 1.
 
 #### Run ab initio on unmasked sequence
-`unmask`
-Value is 0 or 1. This could be helpful in annotating novel transposons. \
+`unmask` \
+Value is 0 or 1. This could be helpful in annotating novel transposons.
 
 #### Number of processors available
-`cpus`
-Value is any positive integer. Leave this value at 1 if you are using MPI; that is, running MAKER on multiple nodes simultaneously. \
+`cpus` \
+Value is any positive integer. Leave this value at 1 if you are using MPI; that is, running MAKER on multiple nodes simultaneously.
 
 #### Extra stats in GFF3
-`pred_stats`
-Value is 0 or 1. By default, only transcripts contain AED and other statistics (QI), while features such as exons do not. Turn it on to get this information for all features. \
+`pred_stats` \
+Value is 0 or 1. By default, only transcripts contain AED and other statistics (QI), while features such as exons do not. Turn it on to get this information for all features.
 
 #### Quality threshold
-`AED_threshold`
-Value is a number between 0 and 1. Setting maximum tolerated AED to less than one will result in fewer models of higher average quality. \
+`AED_threshold` \
+Value is a number between 0 and 1. Setting maximum tolerated AED to less than one will result in fewer models of higher average quality.
 
 #### Min protein length from gene predictors
-`min_protein`
-Value is a positive integer. Gene predictors can predict many small proteins. Setting this can reduce spurious predictions by ab initios. \
+`min_protein` \
+Value is a positive integer. Gene predictors can predict many small proteins. Setting this can reduce spurious predictions by ab initios.
 
 #### Find alternate splice forms
-`alt_splice`
-Value is 0 or 1. Gene predictors will be trained to find alternative splice forms if this is on, which will be output in the GFF3. \
+`alt_splice` \
+Value is 0 or 1. Gene predictors will be trained to find alternative splice forms if this is on, which will be output in the GFF3.
 
 
 ##### Paths in maker_exe.ctl
-
 Ab initio gene predicion algorithms are only required if being used in your MAKER run. \
 ```
 #-----Location of Executables Used by MAKER/EVALUATOR
