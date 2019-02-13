@@ -110,7 +110,7 @@ Value is 0 or 1. Gene predictors will be trained to find alternative splice form
 
 
 ##### Paths in maker_exe.ctl
-Ab initio gene predicion algorithms are only required if being used in your MAKER run. \
+Ab initio gene predicion algorithms are only required if being used in your MAKER run.
 ```
 #-----Location of Executables Used by MAKER/EVALUATOR
 makeblastdb= #location of NCBI+ makeblastdb executable
