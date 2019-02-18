@@ -144,7 +144,7 @@ snoscan= #location of snoscan executable
 ------
 ------
 
-#### Submission Script
+### Command Line Options and Submission Script
 
 ```
 #!/bin/bash
@@ -171,5 +171,52 @@ mpirun -n 40 maker maker_bopts.ctl maker_exe.ctl maker_opts.ctl 1>maker.err 2>ma
 echo "END"
 date
 ```
+
+------
+------
+
+### Output
+
+
+------
+------
+
+### Accessory scripts
+
+
+------
+------
+
+### Training Gene Predictors
+
+
+------
+------
+
+### Example Commands Collection
+
+------
+------
+
+### Downstream Processing Scripts
+
+------
+
+#### Manipulating GFF3-Format Files
+
+##### Adding Attributes
+
+##### Renaming Attributes
+
+##### Command-Line Pipeline Examples For Extracting Information From GFF3
+
+------
+
+#### Creating Tracks For Circos From GFF3-Format Files
+
+------
+
+#### Coordinate Arithmetic With BED-Format
+
 
 [DerDocs Home](https://github.com/mcsimenc/DerLab/blob/master/DerDocsHome.md)
