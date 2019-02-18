@@ -205,25 +205,30 @@ What we did for Azolla and Salvinia.
 ------
 ------
 
-### Downstream Processing Scripts
+### Manipulating GFF3-Format Files
 
 ------
 
-#### Manipulating GFF3-Format Files
-
-##### Adding Attributes
-
-##### Renaming Attributes
-
-##### Command-Line Pipeline Examples For Extracting Information From GFF3
+#### Adding Attributes
 
 ------
 
-#### Creating Tracks For Circos From GFF3-Format Files
+#### Renaming Attributes
+
+------
+
+#### Command-Line Pipeline Examples For Extracting Information From GFF3
+
+------
+
+#### Creating Tracks For Circos
 
 ------
 
 #### Feature-Coordinate Arithmetic With BED-Format
+
+------
+------
 
 
 [DerDocs Home](https://github.com/mcsimenc/DerLab/blob/master/DerDocsHome.md)
