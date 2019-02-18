@@ -31,8 +31,7 @@ The syntax for the control files is key=value with # preceeded comments. The con
 
 DNA and protein sequences can be provided to MAKER in FASTA or GFF3 format. Below, the FASTA options are shown.
 
-#### Notable Options in maker_opts.ctl
-
+### Selected Options in maker_opts.ctl
 ###### syntax: `key=value`
 ###### e.g., `genome=mygenome.fasta`
 
