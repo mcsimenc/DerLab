@@ -33,8 +33,7 @@ DNA and protein sequences can be provided to MAKER in FASTA or GFF3 format. Belo
 
 ------
 #### Selected Options in maker_opts.ctl
-###### syntax: `key=value`
-###### e.g., `genome=mygenome.fasta`
+###### syntax: `key=value`        e.g., `genome=mygenome.fasta`
 ------
 
 #### DNA sequence (genome assembly)
