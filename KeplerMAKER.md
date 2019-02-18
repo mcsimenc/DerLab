@@ -177,23 +177,30 @@ date
 
 ### Output
 
-
 ------
 ------
 
-### Accessory scripts
-
+### MAKER Accessory scripts
 
 ------
 ------
 
 ### Training Gene Predictors
 
+------
+
+#### SNAP
+
+------
+
+#### AUGUSTUS
 
 ------
 ------
 
-### Example Commands Collection
+### Example MAKER Protocol
+
+What we did for Azolla and Salvinia.
 
 ------
 ------
