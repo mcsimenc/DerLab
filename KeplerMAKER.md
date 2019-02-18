@@ -223,7 +223,7 @@ What we did for Azolla and Salvinia.
 
 ------
 
-#### Coordinate Arithmetic With BED-Format
+#### Feature-Coordinate Arithmetic With BED-Format
 
 
 [DerDocs Home](https://github.com/mcsimenc/DerLab/blob/master/DerDocsHome.md)
