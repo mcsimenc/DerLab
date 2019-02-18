@@ -35,6 +35,7 @@ DNA and protein sequences can be provided to MAKER in FASTA or GFF3 format. Belo
 #### Selected Options in maker_opts.ctl
 ###### syntax: `key=value`
 ###### e.g., `genome=mygenome.fasta`
+------
 
 #### DNA sequence (genome assembly)
 `genome` \
@@ -108,8 +109,10 @@ Value is a positive integer. Gene predictors can predict many small proteins. Se
 `alt_splice` \
 Value is 0 or 1. Gene predictors will be trained to find alternative splice forms if this is on, which will be output in the GFF3.
 
+------
+#### Paths in maker_exe.ctl
+------
 
-##### Paths in maker_exe.ctl
 Ab initio gene predicion algorithms are only required if being used in your MAKER run.
 ```
 #-----Location of Executables Used by MAKER/EVALUATOR
