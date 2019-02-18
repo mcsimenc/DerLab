@@ -180,7 +180,7 @@ date
 ------
 ------
 
-### MAKER Accessory scripts
+### MAKER Accessory Scripts
 
 ------
 ------
@@ -205,7 +205,7 @@ What we did for Azolla and Salvinia.
 ------
 ------
 
-### Manipulating GFF3-Format Files
+### Manipulating GFF3-format Files
 
 ------
 
@@ -217,15 +217,15 @@ What we did for Azolla and Salvinia.
 
 ------
 
-#### Command-Line Pipeline Examples For Extracting Information From GFF3
+#### Command-Line Pipeline Examples for Extracting Information from GFF3
 
 ------
 
-#### Creating Tracks For Circos
+#### Creating Tracks for Circos
 
 ------
 
-#### Feature-Coordinate Arithmetic With BED-Format
+#### Feature-Coordinate Arithmetic with BED Format
 
 ------
 ------
