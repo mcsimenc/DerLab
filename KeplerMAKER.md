@@ -146,6 +146,10 @@ snoscan= #location of snoscan executable
 
 ### Command Line Options and Submission Script
 
+The first line of the submission script tells the computer what program is used to open it. Information about the values on the next six lines can be found by typing `man qsub`; in the screen that pops up, push `/` then type a word to search for, for example, `-k`. The search looks only ahead of the current view position of the file, but you can go to the top of the file by pressing `g`. To go to the next search match press `n` and to go to the previous search match press `p`. The available options for the line `#PBS -q` are `q40`, `q24`, `long`, and `performance`.
+
+Maker needs to be loaded along with tRNAscan-SE if tRNA annotation will be carried out by your MAKER run, and OpenMPI needs to be loaded only if you will run your job on multiple nodes. In addition to running on MPI, multiple identical jobs may be started in the same directory to achieve cross-node parallelization but the MAKER developers say MPI is faster. If you are running with MPI, first enter `mpirun` then `n i` where `i` is the total number of processors you will use. After that put a normal MAKER call, beginning with `maker`. If using MPI, set the value for `cpu` to `cpu=0` in the file `maker_opts.ctl`. Next on the line specify the paths to the control files and redirect stdout and stderr to files to serve as references if anything goes wrong.
+
 ```
 #!/bin/bash
 #PBS -k oe
@@ -162,14 +166,7 @@ module load openmpi
 
 cd /home/derstudent/data/santalales/annotation_all_taxa
 
-
-echo "START"
-date
-
 mpirun -n 40 maker maker_bopts.ctl maker_exe.ctl maker_opts.ctl 1>maker.err 2>maker.log
-
-echo "END"
-date
 ```
 
 ------
