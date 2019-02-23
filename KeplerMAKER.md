@@ -174,6 +174,8 @@ mpirun -n 40 maker maker_bopts.ctl maker_exe.ctl maker_opts.ctl 1>maker.err 2>ma
 
 ### Output
 
+Within the directory from which the shell script calling `maker` is submitted with `qsub`, a directory will appear named `<inputFastaFilename>.maker.output/`. Many subdirectories exist within this directory where MAKER's processes read and write files in parallel. When MAKER has finished running, GFF3 and FASTA files of annotations can be obtained using accessory scripts.
+
 ------
 ------
 
