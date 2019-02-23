@@ -157,7 +157,7 @@ Maker needs to be loaded along with tRNAscan-SE if tRNA annotation will be carri
 #PBS -q q40
 #PBS -j oe
 #PBS -m ea
-#PBS -M mcsimenc@csu.fullerton.edu
+#PBS -M your@email.com
 #PBS -l nodes=1:ppn=40
 
 module load local/maker
