@@ -1,4 +1,4 @@
-[DerDocs Home](https://github.com/mcsimenc/DerLab/blob/master/DerDocsHome.md)
+[DerDocs Home](https://github.com/mcsimenc/DerLab/blob/master/README.md)
 
 # Guide to MAKER Genome Annotation Pipeline on Kepler
 
