@@ -1,4 +1,4 @@
-[DerDocs Home](https://github.com/mcsimenc/DerLab/blob/master/DerDocsHome.md)
+[DerDocs Home](https://github.com/mcsimenc/DerLab/blob/master/README.md)
 
 ```
 #-----BLAST and Exonerate Statistics Thresholds
@@ -31,4 +31,4 @@ ep_score_limit=20 #Exonerate protein percent of maximal score threshold
 en_score_limit=20 #Exonerate nucleotide percent of maximal score threshold
 ```
 
-[DerDocs Home](https://github.com/mcsimenc/DerLab/blob/master/DerDocsHome.md)
+[DerDocs Home](https://github.com/mcsimenc/DerLab/blob/master/README.md)
